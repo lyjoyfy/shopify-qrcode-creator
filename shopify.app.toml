@@ -3,7 +3,8 @@
 client_id = "586d233e338321baf7feb44e6d0271ab"
 name = "qr-code-creator"
 handle = "qr-code-creator-8"
-application_url = "https://example.com/"
+#application_url = "https://example.com/"
+application_url = "https://shopify-qrcode-creator.vercel.app/"
 embedded = true
 
 [build]
@@ -18,7 +19,9 @@ api_version = "2025-04"
 scopes = "read_products,write_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+#redirect_urls = [ "https://example.com/api/auth" ]
+
+redirect_urls = [ "https://shopify-qrcode-creator.vercel.app/api/auth" ]
 
 [pos]
 embedded = false
