@@ -8,11 +8,12 @@ generator client {
 // Note that some adapters may set a maximum length for the String type by default, please ensure your strings are long
 // enough when changing adapters.
 // See https://www.prisma.io/docs/orm/reference/prisma-schema-reference#string for more information
-datasource db {
   //provider = "sqlite"
  // url      = "file:dev.sqlite"
+datasource db {
    provider = "mysql"
-    url      = "mysql://ecshop_rd:qwer-1234-ecrd@rm-j6c66567y93x8y2qn.mysql.rds.aliyuncs.com:3306/lytest_0425"
+   url      = "mysql://ecshop_rd:qwer-1234-ecrd@rm-j6c66567y93x8y2qn.mysql.rds.aliyuncs.com:3306/lytest_0425"
+   relationMode = "prisma"
 }
 
 model Session {
