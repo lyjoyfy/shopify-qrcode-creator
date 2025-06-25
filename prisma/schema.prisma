@@ -9,8 +9,10 @@ generator client {
 // enough when changing adapters.
 // See https://www.prisma.io/docs/orm/reference/prisma-schema-reference#string for more information
 datasource db {
-  provider = "sqlite"
-  url      = "file:dev.sqlite"
+  //provider = "sqlite"
+ // url      = "file:dev.sqlite"
+   provider = "mysql"
+    url      = "mysql://ecshop_rd:qwer-1234-ecrd@rm-j6c66567y93x8y2qn.mysql.rds.aliyuncs.com:3306/lytest_0425"
 }
 
 model Session {
